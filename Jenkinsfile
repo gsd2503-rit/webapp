@@ -12,7 +12,7 @@ pipeline{
                 git(
                     url:"https://github.com/gsd2503-rit/webapp.git",
                     branch:'main',
-                    credentialsID:'DockerCredentials'
+                    credentialsId:'DockerCredentials'
                 )
             }
         }
