@@ -9,11 +9,11 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git{
-                    url: "https://github.com/gsd2503-rit/webapp.git"
-                    branch: 'main'
-                    credentialsID: 'DockerCredentials'
-                }
+                git(
+                    url:"https://github.com/gsd2503-rit/webapp.git"
+                    branch:'main'
+                    credentialsID:'DockerCredentials'
+                )
             }
         }
 
